@@ -1,0 +1,23 @@
+@tailwind base;
+
+@tailwind components;
+.overflow-auto::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+  
+  .overflow-auto.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .overflow-auto::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+    border-radius: 8px;
+  }
+  
+  .overflow-auto::-webkit-scrollbar-thumb {
+    @apply bg-gray-200;
+    border-radius: 8px;
+  }
+@tailwind utilities;

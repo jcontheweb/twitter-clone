@@ -1,19 +1,25 @@
 import React, { useEffect } from 'react'
-import axios from 'axios'
+import { BrowserRouter as Router } from "react-router-dom";
+import { Header } from './components/layout/header/header.component'
+import { Main } from './components/layout/main/main.component'
+import { Aside } from './components/layout/aside/aside.component'
+import { ApplicationBar } from './components/application-bar/application-bar.component'
+import { AccountSidebar } from './components/account-sidebar/account-sidebar.component'
+
+import { SidebarProvider } from './context/SidebarState'
 
 export const App = () => {
-  const fetchStats = async (username) => {
-    const response = await axios.post('http://localhost:5000/api/search', { username: 'mobofo' })
-    console.log(response.data)
-  }
-
-  useEffect(() => {
-    fetchStats()
-  }, [])
-
   return (
-    <div>
-      
-    </div>
+    <Router>
+      <SidebarProvider>
+        <div className="min-h-screen max-w-7xl mx-auto flex flex-col lg:flex-row">
+          <Header />
+          <Main />
+          <Aside />
+          <ApplicationBar />
+          <AccountSidebar />
+        </div>
+      </SidebarProvider>
+    </Router>
   )
 }
