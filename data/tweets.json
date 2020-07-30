@@ -1,0 +1,53 @@
+[
+  {
+    "id": 10,
+    "created_at": "8h",
+    "author": {
+      "id": 1,
+      "name": "Justin Cairns",
+      "handle": "justincairns",
+      "avatar": null,
+      "verified": true
+      },
+    "content": "It would be impossible for me to be more excited about this fight. The return of the GOAT lightweight king, @TeamKhabib vs his most dangerous challenger, @justin_gaethje. I CAN'T FUCKING WAIT.",
+    "stats": {
+      "comments": 139,
+      "retweets": 266,
+      "likes": 3700
+      }
+  },
+  {
+    "id": 10,
+    "created_at": "8h",
+    "author": {
+      "id": 1,
+      "name": "Justin Cairns",
+      "handle": "justincairns",
+      "avatar": null,
+      "verified": true
+      },
+    "content": "It would be impossible for me to be more excited about this fight. The return of the GOAT lightweight king, @TeamKhabib vs his most dangerous challenger, @justin_gaethje. I CAN'T FUCKING WAIT.",
+    "stats": {
+      "comments": 139,
+      "retweets": 266,
+      "likes": 3700
+      }
+  },
+  {
+    "id": 10,
+    "created_at": "8h",
+    "author": {
+      "id": 1,
+      "name": "Justin Cairns",
+      "handle": "justincairns",
+      "avatar": null,
+      "verified": true
+      },
+    "content": "It would be impossible for me to be more excited about this fight. The return of the GOAT lightweight king, @TeamKhabib vs his most dangerous challenger, @justin_gaethje. I CAN'T FUCKING WAIT.",
+    "stats": {
+      "comments": 139,
+      "retweets": 266,
+      "likes": 3700
+      }
+  }
+]

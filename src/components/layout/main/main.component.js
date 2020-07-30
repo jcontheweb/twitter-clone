@@ -5,7 +5,7 @@ import { Home } from '../../../pages/home.page'
 
 export const Main = () => {
     return (
-        <main className="flex-1 border-r border-l">
+        <main className="flex flex-col flex-1 lg:border-r lg:border-l">
             <Switch>
                 <Route exact path="/">
                     <Home />

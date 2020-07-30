@@ -1,21 +1,21 @@
 .overlay {
     visibility: hidden;
     opacity: 0;
-    transition: all 300ms ease;
 }
 
 .overlay.active {
     visibility: visible;
     opacity: 1;
+    transition: all 300ms ease;
 }
 
 .sidebar {
     visibility: hidden;
     transform: translateX(-100%);
-    transition: all 250ms ease;
 }
 
 .sidebar.active {
     visibility: visible;
     transform: translateX(0);
+    transition: all 250ms ease;
 }

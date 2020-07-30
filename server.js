@@ -10,15 +10,20 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get('/api/tweets', (req, res) => {
+  const MockTweets = require("./data/tweets.json")
+  res.send(MockTweets)
+})
+
 app.post('/api/search', async (req, res) => {
   const username = req.body.username
 
   if (!username) {
-      res.send(`No username found.`)
+    res.send(`No username found.`)
   } else {
-      const { data } = await axios.get(`http://services.runescape.com/m=hiscore_oldschool/index_lite.ws?player=${username}`)
+    const { data } = await axios.get(`http://services.runescape.com/m=hiscore_oldschool/index_lite.ws?player=${username}`)
 
-      res.send(data)
+    res.send(data)
   }
 });
 

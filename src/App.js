@@ -6,20 +6,23 @@ import { Aside } from './components/layout/aside/aside.component'
 import { ApplicationBar } from './components/application-bar/application-bar.component'
 import { AccountSidebar } from './components/account-sidebar/account-sidebar.component'
 
-import { SidebarProvider } from './context/SidebarState'
+import { SidebarProvider } from './context/sidebar/SidebarState'
+import { UserProvider } from './context/user/UserState'
 
 export const App = () => {
   return (
     <Router>
-      <SidebarProvider>
-        <div className="min-h-screen max-w-7xl mx-auto flex flex-col lg:flex-row">
+      <UserProvider>
+        <div className="min-h-screen max-w-6xl mx-auto flex flex-col lg:flex-row">
           <Header />
-          <Main />
+          <SidebarProvider>
+            <Main />
+            <AccountSidebar />
+          </SidebarProvider>
           <Aside />
           <ApplicationBar />
-          <AccountSidebar />
         </div>
-      </SidebarProvider>
+      </UserProvider>
     </Router>
   )
 }
