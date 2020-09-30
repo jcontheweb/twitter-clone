@@ -13,12 +13,11 @@ const StatsRetweet = ({ tweet }) => {
         setExpanded(prevState => !prevState)
     }
     return (
-        <div>
-            {expanded && (<OptionsModal onClick={handleClick}>
-                <button className="flex items-center leading-tight mb-5 focus:outline-none focus:shadow-outline">Retweet</button>
-                <button className="flex items-center leading-tight focus:outline-none focus:shadow-outline">Retweet with comment</button>
-            </OptionsModal>)}
-            <button className="text-gray-700 flex items-center text-sm" onClick={handleClick}><SVGRetweet className="w-4 mr-2" />{tweet.stats.retweets}</button>
+        <div className="relative whitespace-no-wrap">
+            <OptionsModal custom={true} style={'text-gray-700 flex items-center text-sm'} inner={(<SVGRetweet className="w-4 mr-2" />)}>
+                <button>Retweet</button>
+                <button>Retweet with comment</button>
+            </OptionsModal>
         </div>
     )
 }

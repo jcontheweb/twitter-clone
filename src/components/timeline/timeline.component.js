@@ -7,7 +7,7 @@ import { Tweet } from '../tweet/tweet.component'
 
 export const Timeline = () => {
     const [tweets, setTweets] = useState([])
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(false)
 
     useEffect(() => {
         axios.get('http://localhost:5000/api/tweets')

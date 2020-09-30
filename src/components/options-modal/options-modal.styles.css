@@ -1,3 +1,30 @@
-/* .Options-Modal__List > button:not(:last-of-type) {
-    margin-bottom: 1.5em;
-} */
+.Options-Modal__Large button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    transition: background 200ms ease;
+}
+.Options-Modal__Large button:hover, .Options-Modal__Large button:focus {
+    background: #f7fafc;
+}
+.Options-Modal__Large button:first-of-type {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.Options-Modal__Large button:last-of-type {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+/** Mobile **/
+.Options-Modal__Mobile button {
+    display: flex;
+    align-items: center;
+    line-height: 1.25;
+    font-size: 0.875rem;
+}
+.Options-Modal__Mobile button:not(:last-of-type) {
+    margin-bottom: 1.25rem;
+}

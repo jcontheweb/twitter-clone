@@ -15,7 +15,7 @@ export const WelcomeBack = () => {
     return (
         <div className="py-4 px-1 bg-white relative shadow flex flex-col justify-center items-center mb-2">
             <OptionsModal>
-                <button className="text-sm">See less often</button>
+                <button>See less often</button>
             </OptionsModal>
             <div className="text-lg font-bold mb-2">Welcome back</div>
             <p className="text-gray-600 mb-4 leading-5 text-sm text-center">
